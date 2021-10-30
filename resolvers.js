@@ -93,7 +93,7 @@
 
 const fetch = require('node-fetch');
 
-const API_URL = 'http://localhost:5000/v1';
+const {API_URL} = process.env; //'http://localhost:5000/v1';
 
 const Query = {
     meteor: async (parent, args, context, info) => {
